@@ -8,6 +8,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     vagrant1.vm.box = "ubuntu/trusty64"
     vagrant1.vm.network "forwarded_port", guest: 80, host: 8080
     vagrant1.vm.network "forwarded_port", guest: 443, host: 8443
+    vagrant1.vm.network "forwarded_port", guest: 8000, host: 8001
   end
 
   config.vm.define "vagrant2" do |vagrant2|
