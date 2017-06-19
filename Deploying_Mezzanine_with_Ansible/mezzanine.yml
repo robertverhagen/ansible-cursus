@@ -49,3 +49,6 @@
       - python-setuptools
       - python-virtualenv
       - supervisor
+
+    - name: check out the repository on the host
+      git: repo={{ repo_url }} dest={{ proj_path }} accept_hostkey=yes
