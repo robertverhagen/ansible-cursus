@@ -1,0 +1,9 @@
+- name: test script
+  hosts: vagrant1
+  sudo: false
+  vars:
+    xxx: yyy
+
+  tasks:
+    - name: start the script
+      script: scripts/test_script.sh
